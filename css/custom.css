@@ -1,0 +1,28 @@
+.animation{
+	width:20px;
+	height: 20px;
+	display: block;
+	background: #555555;
+	position: absolute;
+	border-radius: 50%;
+	/*-webkit-animation: mymove 2.5s infinite;*/ /* Chrome, Safari, Opera */ 
+    animation: mymove 2.5s infinite;
+    transition:all .50s;
+}
+.animation:hover{
+	background: #000000;
+}
+
+/* Chrome, Safari, Opera */ 
+/*@-webkit-keyframes mymove {
+    0%		{padding: 	10px;}
+    50% 	{padding:	15px;}
+    100%	{padding: 	10px;}
+}*/
+
+/* Standard syntax */
+@keyframes mymove {
+    0%		{width: 	20px;height: 	20px; 	left:10px; 	top:10px;}
+    50% 	{width:	10px;height:	10px;	left:0px;	top:0px;}
+    100%	{width: 	10px;height: 	10px; 	left: 10px;	top:10px;}
+}
